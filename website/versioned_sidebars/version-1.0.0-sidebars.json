@@ -1,0 +1,32 @@
+{
+  "version-1.0.0-docs": {
+    "Java": [
+      "version-1.0.0-doc1",
+      "version-1.0.0-Java"
+    ],
+    "HTML": [
+      "version-1.0.0-Java.Classes"
+    ],
+    "JavaScript": [
+      "version-1.0.0-JavaEE"
+    ],
+    "CSS": [
+      "version-1.0.0-doc5"
+    ],
+    "Maven": [
+      "version-1.0.0-doc4"
+    ],
+    "NHibernate": [
+      "version-1.0.0-doc3"
+    ],
+    "Node.js": [
+      "version-1.0.0-doc2"
+    ],
+    "Heroku": [
+      "version-1.0.0-doc1"
+    ]
+  },
+  "version-1.0.0-docs-other": {
+    "First Category": []
+  }
+}

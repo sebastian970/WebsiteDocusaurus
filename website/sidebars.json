@@ -1,0 +1,16 @@
+{
+  "docs": {
+    "main": ["Main"],
+    "Java": ["doc1","Java"],
+    "HTML": ["Java.Classes"],
+    "JavaScript": ["JavaEE"],
+    "CSS":["doc5"],
+    "Maven":["doc4"],
+    "NHibernate":["doc3"],
+    "Node.js":["doc2"],
+    "Heroku":["doc1"]
+  },
+  "docs-other": {
+    "First Category": []
+  }
+}
