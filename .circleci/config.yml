@@ -1,12 +1,11 @@
-
 # If you only want circle to run on direct commits to master, you can uncomment this out
 # and uncomment the filters: *filter-only-master down below too
-
- aliases:
-  - &filter-only-master
-    branches:
-      only:
-       - master
+#
+# aliases:
+#  - &filter-only-master
+#    branches:
+#      only:
+#        - master
 
 version: 2
 jobs:
@@ -25,14 +24,9 @@ jobs:
             echo "machine github.com login OlegGitH password $GITHUB_TOKEN" > ~/.netrc
             cd website && yarn install && GIT_USER=OlegGitH yarn run publish-gh-pages
 
-# CircleCI 2.0 Config File
-# This config file will prevent tests from being run on the gh-pages branch.
 workflows:
-version: 2
-jobs:
-  build:
-    machine: true
-    branches:
-      ignore: gh-pages
-    steps:
-      - run: echo "Skipping tests on gh-pages branch"
+  version: 2
+  build_and_deploy:
+    jobs:
+      - deploy-website:
+#         filters: *filter-only-master
