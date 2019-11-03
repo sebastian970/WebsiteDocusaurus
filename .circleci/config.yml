@@ -25,9 +25,11 @@ jobs:
             echo "machine github.com login OlegGitH password $GITHUB_TOKEN" > ~/.netrc
             cd website && yarn install && GIT_USER=OlegGitH yarn run publish-gh-pages
 
-workflows:
-  version: 2
-  build_and_deploy:
-    jobs:
-      - deploy-website:
-        filters: filter-only-master
+version: 2
+jobs:
+  build:
+    machine: true
+    branches:
+      ignore: gh-pages
+    steps:
+      - run: echo "Skipping tests on gh-pages branch"
