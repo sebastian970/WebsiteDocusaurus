@@ -30,13 +30,13 @@ const siteConfig = {
   title: 'Documentation', // Title for your website.
   tagline: 'Future Business',
   url: 'https://OlegGitH.github.io', // Your website URL
-  baseUrl: '/FutureBusiness/', // Base URL for your project */
+  baseUrl: '/MasterFuture/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'FutureBusiness',
+  projectName: 'MasterFuture',
   organizationName: 'OlegGitH',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
@@ -51,7 +51,7 @@ const siteConfig = {
     {search: true}
   ],
 
-  editUrl: ' '  ,
+  editUrl: 'https://github.com/OlegGitH/MasterFuture/blob/master/docs/doc1.md'  ,
   // If you have users set above, you add it here:
   users,
 
