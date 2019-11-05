@@ -1,7 +1,10 @@
 ---
 id: Main
-title: Main
+title: this is main
 ---
+
+
+## Markdown Syntax
 
 Welcom to my non-completly website.
 

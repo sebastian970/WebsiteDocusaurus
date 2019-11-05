@@ -1,6 +1,6 @@
 {
   "docs": {
-    "main": ["Main"],
+    "Main": ["Main"],
     "Java": ["doc1","Java"],
     "HTML": ["Java.Classes"],
     "JavaScript": ["JavaEE"],
