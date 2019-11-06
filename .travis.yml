@@ -15,7 +15,7 @@ script:
 
 deploy:
   provider: pages
-  skip-cleapup: true
+  skip-cleanup: true
   github-token: ${GH_TOKEN}
   on:
     branch: master
