@@ -51,7 +51,7 @@ const siteConfig = {
     {search: true}
   ],
 
-  editUrl:'https://github.com/OlegGitH/WebsiteDocusaurus/blob/master/docs/'  ,
+  editUrl: 'https://github.com/OlegGitH/MasterFuture/blob/master/docs/doc1.md'  ,
   // If you have users set above, you add it here:
   users,
 
