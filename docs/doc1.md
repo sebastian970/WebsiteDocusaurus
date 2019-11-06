@@ -8,6 +8,10 @@ custom_edit_url: https://github.com/OlegGitH/WebsiteDocusaurus/blob/master/docs/
 Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
 
 ## Loremasfd
+<<<<<<< HEAD
+=======
+fsdfsddddddddddddddddddddddrgsgfsdffffffffffffffffffffffffffffffffffffff
+>>>>>>> 7d15208a02d7696d4f8c9ecab499a51676fde044
 
 ## Mauris In Code
 
