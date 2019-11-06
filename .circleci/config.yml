@@ -22,7 +22,39 @@ jobs:
             git config --global user.email "OlegGitH@users.noreply.github.com"
             git config --global user.name "Oleg"
             echo "machine github.com login OlegGitH password $GITHUB_TOKEN" > ~/.netrc
-            cd website && yarn install && GIT_USER=OlegGitH yarn run publish-gh-pages
+            cd website && yarn install &&# If you only want circle to run on direct commits to master, you can uncomment this out
+# and uncomment the filters: *filter-only-master down below too
+#
+aliases:
+  - &filter-only-master
+    branches:
+      only:
+        - master
+
+version: 2
+jobs:
+  deploy-website:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:12.13.0
+
+    steps:
+      - checkout
+      - run:
+          name: Deploying to GitHub Pages
+          command: |
+            git config --global user.email "OlegGitH@users.noreply.github.com"
+            git config --global user.name "Oleg"
+            echo "machine github.com login OlegGitH password $GITHUB_TOKEN" > ~/.netrc
+            cd website && yarn install && CUSTOM_COMMIT_MESSAGE="[skip ci]" / GIT_USER=OlegGitH yarn run publish-gh-pages
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - deploy-website:
+         filters: *filter-only-master
+ GIT_USER=OlegGitH yarn run publish-gh-pages
 
 workflows:
   version: 2
