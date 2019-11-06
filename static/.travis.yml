@@ -1,0 +1,16 @@
+# .travis.yml
+language: node_js
+node_js:
+  - '8'
+branches:
+  only:
+    - master
+cache:
+  yarn: true
+script:
+  - git config --global user.name "OlegGitH"
+  - git config --global user.email "creduntvitam@gmail.com"
+  - echo "machine github.com login OlegGitH password ${GH_TOKEN}" > ~/.netrc
+  - cd website && yarn install && GIT_USER="OlegGitH" yarn run publish-gh-pages
+
+  
