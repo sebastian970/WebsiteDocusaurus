@@ -13,3 +13,9 @@ script:
   - echo "machine github.com login OlegGitH password ${GH_TOKEN}" > ~/.netrc
   - cd website && yarn install && GIT_USER="OlegGitH" yarn run publish-gh-pages
 
+deploy:
+  provider: pages
+  skip-cleapup: true
+  github-token: $GH_TOKEN
+  on:
+    branch: master
