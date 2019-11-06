@@ -45,13 +45,12 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'doc1', label: 'Documentation'},
-    {doc: 'doc4', label: 'Main'},
     {page: 'help', label: 'Help'},
     {href: 'https://trello.com/b/kY3Dg9n3/aplikacja-webowa-planowanie', label: 'Trello'},
     {search: true}
   ],
 
-  editUrl: 'https://github.com/OlegGitH/WebsiteDocusaurus/blob/master/website/versioned_docs/version-1.0.0/'  ,
+  editUrl: 'https://github.com/OlegGitH/WebsiteDocusaurus/blob/master/website/versioned_docs/version-1.0.0/' ,
   // If you have users set above, you add it here:
   users,
 
